@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-headline: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --font-editorial: 'Newsreader', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #FAF8F3;
+    color: #0E1B2B;
+    background-image: radial-gradient(#d9cfbc 0.65px, transparent 0.65px);
+    background-size: 26px 26px;
+    background-position: 0 0;
+  }
+}
+
+.font-headline {
+  font-family: var(--font-headline);
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Authentic Gilded Newspaper Double Border */
+.border-newspaper-double {
+  border-bottom: 3px double #C5A059;
+  border-top: 3px double #C5A059;
+}
+
+.border-navy-double {
+  border-bottom: 3px double #102A45;
+  border-top: 3px double #102A45;
+}
+
+.border-newspaper-thick {
+  border-bottom: 3px solid #102A45;
+  border-top: 1px solid #C5A059;
+}
+
+/* Drop cap for lead articles matching AIA deep sapphire blue */
+.drop-cap::first-letter {
+  font-size: 3.5rem;
+  line-height: 0.8;
+  float: left;
+  margin-top: 0.15rem;
+  margin-right: 0.6rem;
+  font-family: var(--font-headline);
+  font-weight: 800;
+  color: #102F52; /* Saphir royal AIA */
+  text-shadow: 1px 1px 0px rgba(197, 160, 89, 0.4);
+}
+
+/* Custom scrollbar for newsfeed with navy & gold tones */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4efe6;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #102A45;
+}
+
+@media print {
+  body {
+    background: white !important;
+    background-image: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
+

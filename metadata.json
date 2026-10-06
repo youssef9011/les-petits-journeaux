@@ -1,0 +1,7 @@
+{
+  "name": "LA UNE — Le Journal d'Ibn Al Abbar",
+  "description": "La une numérique et moderne du journal scolaire de l'École Ibn Al Abbar : actualités, vie scolaire, sport, culture, événements et coin humour.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
